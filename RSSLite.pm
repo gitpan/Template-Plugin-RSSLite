@@ -7,7 +7,7 @@ use base qw( Template::Plugin );
 use Template::Plugin;
 use XML::RSSLite;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 sub new {
 	my $class   = shift;
