@@ -1,0 +1,5 @@
+[% USE rss = RSSLite("test/slashdot.rdf") %]
+[% rss.title %]
+[% FOREACH rss.items %]
+ *[% title %] ([%link%])
+[% END %]
