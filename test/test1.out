@@ -1,23 +1,59 @@
-
-Slashdot: News for nerds, stuff that matters
-
- *EFF Makes Call For DMCA Help (http://slashdot.org/article.pl?sid=00/11/22/1410207)
-
- *Open Source Developer's Agreement (http://slashdot.org/article.pl?sid=00/11/27/1244235)
-
- *If ICANN Can't, Who Can? (http://slashdot.org/article.pl?sid=00/11/26/208231)
-
- *Petreley On Microsoft And Linux (http://slashdot.org/article.pl?sid=00/11/27/1238222)
-
- *High-Speed Wireless LANs Move Forward (http://slashdot.org/article.pl?sid=00/11/27/0118255)
-
- *WebQL Turns the Web Into A Giant Database (http://slashdot.org/article.pl?sid=00/11/26/2245221)
-
- *Florida Election Votes Certified (http://slashdot.org/article.pl?sid=00/11/27/0125214)
-
- *MS and the DOJ Return to the Ring (http://slashdot.org/article.pl?sid=00/11/26/2012218)
-
- *Digital Movies and The Big Screen (http://slashdot.org/article.pl?sid=00/11/26/195223)
-
- *Robodex 2000 Kicks Off In Japan (http://slashdot.org/article.pl?sid=00/11/26/1651233)
+$VAR1 = bless( {
+                 'rdf:RDF' => {
+                                'xmlns:rdf' => 'http://www.w3.org/1999/02/22-rdf-syntax-ns#',
+                                'xmlns' => 'http://my.netscape.com/rdf/simple/0.9/',
+                                'channel' => {
+                                               'description' => 'News for nerds, stuff that matters',
+                                               'title' => 'Slashdot: News for nerds, stuff that matters',
+                                               'link' => 'http://slashdot.org'
+                                             },
+                                'item' => [
+                                            {
+                                              'title' => 'EFF Makes Call For DMCA Help',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/22/1410207'
+                                            },
+                                            {
+                                              'title' => 'Open Source Developer\'s Agreement',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/27/1244235'
+                                            },
+                                            {
+                                              'title' => 'If ICANN Can\'t, Who Can?',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/26/208231'
+                                            },
+                                            {
+                                              'title' => 'Petreley On Microsoft And Linux',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/27/1238222'
+                                            },
+                                            {
+                                              'title' => 'High-Speed Wireless LANs Move Forward',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/27/0118255'
+                                            },
+                                            {
+                                              'title' => 'WebQL Turns the Web Into A Giant Database',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/26/2245221'
+                                            },
+                                            {
+                                              'title' => 'Florida Election Votes Certified',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/27/0125214'
+                                            },
+                                            {
+                                              'title' => 'MS and the DOJ Return to the Ring',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/26/2012218'
+                                            },
+                                            {
+                                              'title' => 'Digital Movies and The Big Screen',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/26/195223'
+                                            },
+                                            {
+                                              'title' => 'Robodex 2000 Kicks Off In Japan',
+                                              'link' => 'http://slashdot.org/article.pl?sid=00/11/26/1651233'
+                                            }
+                                          ],
+                                'image' => {
+                                             'url' => 'http://images.slashdot.org/topics/topicslashdot.gif',
+                                             'title' => 'Slashdot',
+                                             'link' => 'http://slashdot.org'
+                                           }
+                              }
+               }, 'Template::Plugin::RSSLite' );
 

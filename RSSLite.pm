@@ -7,7 +7,7 @@ use base qw( Template::Plugin );
 use Template::Plugin;
 use XML::RSSLite;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub new {
 	my $class   = shift;
@@ -17,8 +17,9 @@ sub new {
 	open F, $file or return $class->error("Line ".__LINE__." ".$!);
 	my $data = join("",(<F>));
 	close F;
-	parseXML($result,\$data);
-   	return $class->error("Line ".__LINE__." ".$!) unless($result->{'title'});
+	XML::RSSLite::parseXML($result,\$data);
+#	use Data::Dumper;print Dumper $result;
+   	return $class->error("Line ".__LINE__." ".$!) unless ($result->{'rdf:RDF'}{'channel'}{'title'});
 	bless $result, $class;
 }
 

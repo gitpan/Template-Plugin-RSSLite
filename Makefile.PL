@@ -4,8 +4,12 @@ use ExtUtils::MakeMaker;
 WriteMakefile(
     'NAME'		=> 'Template::Plugin::RSSLite',
     'VERSION_FROM'	=> 'RSSLite.pm', # finds $VERSION
-    'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
+    'PREREQ_PM'		=> {
+		'Template' => 2,
+		'XML::RSSLite' => 0.11
+	},
     ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM => 'RSSLite.pm', # retrieve abstract from module
-       AUTHOR     => 'A. U. Thor <a.u.thor@a.galaxy.far.far.away>') : ()),
+       AUTHOR     => 'Kenneth Ekdahl (sensei@sensei.nu)') : ()),
 );
+
